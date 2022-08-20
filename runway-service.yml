@@ -13,6 +13,4 @@ spec:
       nodePort: 32000 
       protocol: TCP
   selector:
-    matchLabels:
-      app: myFirstgame
       type: frontend
