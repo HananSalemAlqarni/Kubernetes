@@ -6,16 +6,19 @@ metadata:
     app: mydeployment
     type: frontend
 spec:
+  selector:
+    matchLabels:
+      app: mydeployment
   template:
     metadata:
       name: my-first-game
       labels:
-        app: myFirstgame
+        app: mydeployment
         type: frontend
     spec:
       containers:
         - name: dojo-jump
           image: hanansalem88/dojo-jump
-  selector:
-    matchLabels:
-      type: frontend
+          ports:
+            - containerPort: 80
+              name: mydeployment
