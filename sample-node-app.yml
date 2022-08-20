@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: dojo-jump
+  labels:
+    type: frontend
+spec:
+  containers:
+    - name: dojo-jump
+      image: hanansalem88/dojo-jump
