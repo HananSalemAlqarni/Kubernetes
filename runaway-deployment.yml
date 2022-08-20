@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: dojo-jump
-          image: hanansalem88/dojo-jump
+          image: hanansalem88/dojo-jump:latest
           ports:
             - containerPort: 80
               name: mydeployment
