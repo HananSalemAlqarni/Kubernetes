@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: game
-  name: vote
+  name: runaway
 spec:
   replicas: 1
   selector:
