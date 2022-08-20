@@ -4,7 +4,7 @@ metadata:
   name: deployment
   labels:
     app: mydeployment
-    kind: frontend
+    type: frontend
 spec:
   template:
     metadata:
