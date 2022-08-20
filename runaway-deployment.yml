@@ -6,9 +6,6 @@ metadata:
     app: mydeployment
     type: frontend
 spec:
-  selector:
-    matchLabels:
-      app: mydeployment
   template:
     metadata:
       name: my-first-game
@@ -22,3 +19,6 @@ spec:
           ports:
             - containerPort: 80
               name: mydeployment
+  selector:
+    matchLabels:
+      type: frontend

@@ -13,5 +13,5 @@ spec:
       nodePort: 30000
       protocol: TCP
   selector:
-    app: myFirstgame
+    app: mydeployment
     type: frontend
