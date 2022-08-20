@@ -1,18 +1,19 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: game-service
+  name: game-svc
   labels:
-    app: ame-service
+    app: game-service
 spec:
   type: NodePort
-  ports: 
+  ports:
     - name: http
       port: 80 
       targetPort: 80 
-      nodePort: 32000
+      nodePort: 31089 
+      protocol: TCP
   selector:
     matchLabels:
-      app: myFirstgame
-      type: frontend
+        app: myFirstgame
+        type: frontend
   
